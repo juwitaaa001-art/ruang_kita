@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+import 'modul02/studi_kasus/studio_multimedia.dart';
+
+void main() {
+  runApp(const RuangKitaApp());
+}
+
+class RuangKitaApp extends StatelessWidget {
+  const RuangKitaApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'RuangKita',
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
+      ),
+      home: const StudioMultimediaPage(),
+    );
+  }
+}
